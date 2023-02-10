@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Domine:wght@600&display=swap');
 
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,6 +11,7 @@ body {
   padding: 1rem;
   background-color: rgb(245, 231, 225);
   height: 100vh;
+
 }
 
 /* header */
@@ -71,3 +73,44 @@ main > * {
 /* media queries */
 
 /* YOUR CODE HERE */
+
+/* 
+TASK: Size down your window to below 768px.  
+Using media queries and WITHOUT affecting the larger screen (above 768px), 
+edit the CSS to create the design shown in the table below
+*/
+
+@media screen and (max-width: 768px)
+{
+  body{
+    display: flex; 
+    flex-direction: column;
+    background-size: cover;
+  
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  article.airplane-list-container {    
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .airplane-card{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  
+    width: 100%;
+    padding: 5%;
+    margin: 2%;
+    box-sizing: border-box;
+  }
+
+}
